@@ -5,7 +5,7 @@
  * Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
  */
 
-function sumOfSquareDiff(limit: number): number {
+export default function sumOfSquareDiff(limit: number): number {
 	let sumOfSquares = 0;
 	let sum = 0;
 
@@ -16,5 +16,3 @@ function sumOfSquareDiff(limit: number): number {
 
 	return Math.abs(sum**2 - sumOfSquares);
 }
-
-console.log(sumOfSquareDiff(100));
